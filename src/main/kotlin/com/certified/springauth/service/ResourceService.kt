@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class ResourceService constructor(@Autowired private val repository: ResourceRepository) {
+class ResourceService {
 
-    fun message() = repository.message()
+    fun message() = "Hello World"
 }
